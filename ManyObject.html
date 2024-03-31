@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Many Objects</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let studentList = [
+            {
+            	name : "Tejal",
+            	venue : "Javala",
+            	branch : "CS",
+            	yop : 2023 
+		    },
+		    {
+            	name : "Mayuri",
+            	venue : "Kurduwadi",
+            	branch : "CS",
+            	yop : 2023 
+		    },
+		    {
+            	name : "Snehal",
+            	venue : "Javala",
+            	branch : "CS",
+            	yop : 2021 
+		    }
+	    ] ;
+
+	    studentList.forEach((student)=>document.write(`I am ${student.name} and I am belongs from ${student.venue} and my branch is ${student.branch} and my year of passout is ${student.yop}` + "<br>")) ;
+	</script>
+
+</body>
+</html>

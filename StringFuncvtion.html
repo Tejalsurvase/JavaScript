@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let str = "JAVASCRIPT IS EASY" ;
+		document.writeln(str + "<br>") ;
+		//document.writeln(str.replace("EASY", "VERY EASY")) ;
+        let arr = str.split(" ") ;
+        arr.splice(arr.indexOf("EASY"), 0, "VERY") ;
+        str = arr.join(" ") ;
+        document.write(str + "<br>") ;
+	</script>
+
+</body>
+</html>

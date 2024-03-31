@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Java Programm</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let personName = ["Tejal", "Kajal", "Sejal", "Nehal"] ;
+		document.writeln(personName + "<br>") ;
+		let searchName = prompt("Enter the name you want to search:") ;
+		if (personName.includes(searchName))
+		 {
+		 	let updateName = prompt("Enter the name to update") ;
+		 	let indexName = personName.indexOf(searchName) ;
+		 	personName[indexName] = updateName ;
+		 }
+		 else
+		 {
+		 	alert("Name not found.") ;
+		 }
+
+		 document.writeln(personName) ;
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="textboxstyle.css">
+	<title>String methods</title>
+</head>
+<body>
+	<h1 align="center" class="heading">TEXT BOX</h1>
+	<div class="container" align="center">
+		<form class="textboxform">
+			<label>Enter your text below</label>
+			<br><br>
+			<textarea id="text" rows="18" cols="100" onkeyup="updateInfo()" autofocus></textarea>
+			<br><br>
+			<button type="button" onclick="transformUpperCase()">UPPERCASE</button>
+			<button type="button" onclick="transformLowerCase()">LOWERCASE</button>
+			<button type="button" onclick="findText()">FIND</button>
+			<button type="button" onclick="changeColor()">CHANGE COLOR</button>
+			<button type="button" onclick="textUnderLine()">UNDERLINE</button>
+			<button type="button" onclick="copyText()">COPY</button>
+			<br><br>
+			<h2 id="textinfo">This text contains 0 words and 0 charcters</h2>
+		</form>
+	</div>
+    <script type="text/javascript">
+    	let text = document.getElementById("text") ;
+    	let textinfo = document.getElementById(`textinfo`) ;
+    	let clr ;
+    	function transformUpperCase() {
+    		text.value = text.value.toUpperCase() ;
+    	}
+
+    	function transformLowerCase() {
+    		text.value = text.value.toLowerCase() ;
+    	}
+
+    	function findText() {
+    		let searchText = prompt("Enter the text :") ;
+    		if (text.value.includes(searchText)) 
+    		{
+    			alert(`search text "${searchText}" is present`) ;
+    		}
+    		else{
+    			alert(`search text "${searchText}" is not present`) ;
+    		}
+    	}
+
+    	function changeColor() {
+    		clr = prompt(("Enter your fav color :").toLowerCase()) ;
+    		text.style.color = clr ;
+    	}
+
+    	function textUnderLine() {
+    		text.style.textDecoration = `underline 2px solid ${clr}` ;
+    	}
+
+    	function copyText(argument) {
+    		navigator.clipboard.writeText(text.value) ;
+    	}
+
+    	function updateInfo(){
+    		let numberOfWords = text.value.trim().split(" ").length ;
+    		textinfo.innerHTML = `This text contains ${numberOfWords} words and ${text.value.length} characters`
+    	}
+    </script>
+</body>
+</html>

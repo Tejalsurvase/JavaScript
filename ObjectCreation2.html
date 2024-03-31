@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object creation</title>
+</head>
+<body>
+	<!-- We can create object in javascript by -:
+	1. Objects literals
+	2. Constructor function
+	3. ES6 classes
+	4. Object.create() -->
+	<script type="text/javascript">
+		function subjects(a, b, c) {
+			this.sub1 = a ;
+			this.sub2 = b ;
+			this.sub3 = c ;
+
+			document.write(this.sub1 + "<br>") ; 
+		}
+		let obj = new subjects("SQL", "MANUAL", "JAVA") ;
+		document.write(obj.sub1 + "<br>") ;
+		document.write(obj.sub2 + "<br>") ;
+		document.write(obj.sub3 + "<br>") ;
+	</script>
+
+</body>
+</html>

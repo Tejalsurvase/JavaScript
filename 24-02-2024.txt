@@ -1,0 +1,39 @@
+24-02-2024
+Token:
+- Token is the smallest unit of javascript programming language.
+- There are 6 types of Tokens in JavaScript :
+1) Keywords :
+- They are compile aware words or reserved words in javascript.
+- They have pre-defined meaning.
+- They must be written in lower-case.
+- There are 51+ keyworkds present in JavaScript.
+
+2) Identifiers :
+- They are name given by the programmer to the component of javscript like class, function, variable.
+- We can not use keyword as a identifiers.
+*) Constraints :
+- Variable/Function : If it is of single word, then all the characters should be in lower case AND if it is of multi word, then the first character from second word should be in uppercase(i.e. camel case).
+- Class : If it is of single word, then first characters should be in upper case AND if it is of multi word, then the first character of each word should be in uppercase(i.e. Pascal case).
+
+3) Separator :
+- It is an characters which are used to seperate the block, statements, expression or components of javascript programming language.
+- EX : ( { , . [ etc
+
+4) Comments :
+- It is a statement which are ignored by compiler or interpreter.
+- It is used to explain the logical part of the program.
+- It is used to increase the rediability of the program.
+- There are three types of comment :
+i) single line : //____________________
+ii) multi line : /*________________________________
+                   ______________________________
+                 ___________________________________*/
+iii) documentation line : /** __________________________
+                        *________________________________
+                        *______________________________
+                        *_______________________________**/
+
+5) Literals :
+- It is a data and which is of two types :
+1) Primitive : i) Number, ii)boolean, iii)string, iv)undefined, v)null
+2) Non-Primitive : i)Object, ii)classes, iii)arrays, etc.

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sub-string</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let str = "HELLO WORLD, WORLD IS SO BEAUTIFUL" ;
+		document.write(str + "<br>")
+		// str = str.replace("WORLD", "TEJAL") ;
+		// document.write(str + "<br>") ;
+		// str = str.replaceAll("WORLD", "TEJAL") ;
+		// document.write(str) ;
+		let newStr = str.substr(str.lastIndexOf("WORLD")) ;
+		document.write(newStr + "<br>") ;
+	</script>
+
+</body>
+</html>

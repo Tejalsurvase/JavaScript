@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Clone Of Object</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let person = {
+			name : "ramesh",
+			native : "pune",
+			education { 
+				graduation : "CSE",
+                yop : 2023 ,
+			    college : "SVERI"
+		    },
+		    subjects : ["SQL", "DBMS", "CORE JAVA", "WEB TECH", "SELENIUM"]
+		}
+		let person = Object.create(person1) ;
+		person.name = "Suresh" ;
+		document.write(person.name + "<br>")
+	    document.write("He has knowledge of tech." + "<br>")
+	    person.subjects.forEach((subj,cnt)=>document.write(++cnt+" "+subj+"<br>"));
+	    document.write(`Ramesh has completed his graduation in ${person.education.graduation} in the year ${person.education.yop} from ${person.education.college}`)
+	    document.write("<br>") ;
+	</script>
+
+</body>
+</html>

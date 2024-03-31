@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Featch Output</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<label>Username</label>
+			<input type="text" name="username" id="Username">
+			<br><br>
+			<label>Password</label>
+			<input type="text" name="password" id="Password">
+			<br><br>
+			<input type="button" onclick="fetchCred()" name="lgn" value="Submit">
+		</fieldset>
+	</form>
+
+	<script type="text/javascript">
+		function fetchCred(){
+			let un = document.getElementById("Username").value ;
+			let pass = document.getElementById("Password").value ;
+			console.log("username :" + un) ;
+			console.log("Password :" + pass) ;
+		}
+	</script>
+
+</body>
+</html>

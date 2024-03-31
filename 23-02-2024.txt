@@ -1,0 +1,18 @@
+23-02-2024
+
+JavaScript :
+
+- It is a scripting programming language.
+- It is a high-level just-in-time(JIM) compile and interpreted.
+- It is a multi-paradigm programming language(Imperative(give overall implementation like java, c, js) and Declarative(js, react)).
+- It has object-oriented features.
+- It is rich in function.
+- It is a dynamically typed programming language(datatype can be changed at compile time).
+- It is asynchronous(does not block execution).
+
+*) Disadvantages :
+
+- It is not at all secure like Java.
+- It is not as fast as Java. 
+- It doesn't provide support for multithreading.
+- It also doesn't provide any support to perform any i/p and o/p operations.

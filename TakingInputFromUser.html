@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Taking input from user</title>
+</head>
+<body>
+	<h1 id="heading">hello i am heading</h1>
+	<form autocomplete="off">
+		<label>Username</label>
+		<input type="text" id="username">
+		<button type="button" onclick="displayUsername">Click me</button>
+	</form>
+	<script type="text/javascript">
+		function displayUsername() {
+			alert(document.getElementById("username"))
+		}
+		console.log(document.getElementById("heading").innerHTML)
+	</script>
+
+</body>
+</html>
